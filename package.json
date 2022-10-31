@@ -1,0 +1,24 @@
+{
+  "name": "airline-system",
+  "version": "1.0.0",
+  "description": "a mini app to practice Node events",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HodRZ/airline-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HodRZ/airline-system/issues"
+  },
+  "homepage": "https://github.com/HodRZ/airline-system#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "jest": "^29.2.2"
+  }
+}
