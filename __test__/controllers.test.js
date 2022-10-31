@@ -1,7 +1,7 @@
 'use strict';
 
 const { handleThankPilot, handleNewFlight, handleLogger, handleTookOff, handleArrived } = require("../src/controllers");
-const { flights } = require("../src/data/dummy-data");
+const { flights } = require("../src/data/dummy-DB");
 
 
 describe('Controllers test', () => {
