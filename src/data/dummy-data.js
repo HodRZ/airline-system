@@ -44,8 +44,3 @@ const flights = [];
 for (let i = 0; i < 5; i++) {
     flights.push(createRandomFlight(pilots[i].name));
 }
-
-
-module.exports = {
-    flights
-};

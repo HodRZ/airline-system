@@ -1,7 +1,7 @@
 'use strict';
 
-const { handleThankPilot, handleNewFlight, handleLogger, handleTookOff, handleArrived } = require("../src/controllers");
-const { flights } = require("../src/data/dummy-data");
+const { handleThankPilot, handleNewFlight, handleLogger, handleTookOff, handleArrived } = require("../src/events/controllers");
+const { flights } = require("../src/data/dummy-DB");
 
 
 describe('Controllers test', () => {
@@ -37,7 +37,7 @@ describe('Controllers test', () => {
 
     it('should log flight details to the console', () => {
         const logSpy = jest.spyOn(console, 'log');
-        const data = handleLogger('arrived', flights[0].Flight);
+        const data = handleLogger('arrived', flights[0]);
         expect(logSpy).toHaveBeenCalledWith(data);
         expect(data.Details.flightID).toEqual(flights[0].id);
     });

@@ -1,12 +1,6 @@
 'use strict';
 
 
-//TODO:
-// - new-flight  Manager
-// - took-off    Pilot
-// - arrived     Pilot
-// - log details  control room
-
 const handleNewFlight = (flight) => {
     console.log(`new flight with ID ${flight.id} have been scheduled`);
     return (`new flight with ID ${flight.id} have been scheduled`);
@@ -31,7 +25,7 @@ const handleArrived = (flight) => {
 const handleLogger = (event, flight) => {
     const log = {
         event,
-        ...flight
+        ...flight.Flight
     };
     console.log(log);
     return (log);
