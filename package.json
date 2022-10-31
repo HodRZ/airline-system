@@ -4,7 +4,7 @@
   "description": "a mini app to practice Node events",
   "main": "index.js",
   "scripts": {
-    "test": "jest -coverage"
+    "test": "jest --coverage --verbose"
   },
   "repository": {
     "type": "git",
