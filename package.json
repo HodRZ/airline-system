@@ -4,10 +4,11 @@
   "description": "a mini app to practice Node events",
   "main": "index.js",
   "scripts": {
-    "test": "pnpm --stream -r test",
+    "test-all": "pnpm --stream -r test",
     "start": "pnpm --stream -r start",
     "dev": "pnpm --stream -r dev",
-    "start:dev": "pnpm --stream -r run start:dev"
+    "start:dev": "pnpm --stream -r run start:dev",
+    "test": "jest --coverage --verbose"
   },
   "repository": {
     "type": "git",
